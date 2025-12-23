@@ -1,0 +1,5 @@
+{
+  "name": "StockTag Intelligent Analyzer",
+  "description": "An intelligent dashboard for microstock contributors to analyze and extract high-performing tags from Shutterstock, Adobe Stock, and Freepik using smart ranking algorithms.",
+  "requestFramePermissions": []
+}

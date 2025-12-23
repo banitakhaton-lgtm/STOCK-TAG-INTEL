@@ -1,0 +1,31 @@
+
+{
+  "manifest_version": 3,
+  "name": "StockTag Intelligent Analyzer",
+  "version": "1.0",
+  "description": "Auto-detect and analyze tags from Shutterstock, Adobe Stock, and Freepik.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.shutterstock.com/*",
+        "https://stock.adobe.com/*",
+        "https://www.freepik.com/*"
+      ],
+      "js": ["index.tsx"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.shutterstock.com/*",
+    "https://stock.adobe.com/*",
+    "https://www.freepik.com/*"
+  ]
+}
